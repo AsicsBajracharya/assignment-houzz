@@ -69,7 +69,7 @@ function App() {
       <div className="tab-header">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col">
+            <div className="col-8">
               <ul className="tab-list">
                 <li
                   onClick={() => handleTabClick(1)}
@@ -85,7 +85,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="col">
+            <div className="col-4">
               {activeTab === 2 && (
                 <div className="button-container d-flex justify-content-end">
                   <Button onClick={() => handleOpenModal(true)}>
