@@ -1,0 +1,40 @@
+.tab-header {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  .tab-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    .tab-item {
+      color: grey;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &:hover {
+        color: lighten($color: black, $amount: 20%);
+      }
+    }
+    .tab-item.active {
+      color: black;
+    }
+  }
+}
+
+.tab-body {
+  [class^="col"] {
+    margin-bottom: 40px;
+  }
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+}
+.tab-body.no-content {
+  background-color: $color-grey-light;
+  display: flex;
+  align-items: center;
+}

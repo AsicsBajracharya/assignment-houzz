@@ -1,0 +1,20 @@
+.create-beer-modal {
+  .image-outer-container {
+    padding: 20px 40px;
+    border: 1px solid $color-grey-light;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .image-container {
+      width: 50px;
+    }
+  }
+  .input-group {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .form-control {
+      padding: 12px 8px;
+    }
+  }
+}

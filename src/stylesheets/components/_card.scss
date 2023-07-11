@@ -1,0 +1,25 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+
+  .image-container {
+    margin-right: 30px;
+    min-width: 68px;
+    max-width: 68px;
+  }
+  .content-container {
+    text-align: left;
+    p {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.card-container.hovered {
+  background-color: #f0f0f0;
+}
