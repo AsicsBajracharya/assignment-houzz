@@ -6,11 +6,18 @@
   height: 100%;
   margin-bottom: 40px;
   transition: all 0.3s ease;
-
+  @media (max-width: 565px) {
+    flex-direction: column;
+  }
   .image-container {
-    margin-right: 30px;
+    margin-bottom: 20px;
     min-width: 68px;
     max-width: 68px;
+    @media (min-width: 565px) {
+      margin-right: 30px;
+
+      margin-bottom: 0;
+    }
   }
   .content-container {
     text-align: left;
